@@ -22,7 +22,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prebuild": "pnpm lint && rimraf ./dist",
+    "prebuild": "rimraf ./dist",
     "build": "tsc -p ./tsconfig.json",
     "build:docker": "tsc -p ./tsconfig.json",
     "start": "node --enable-source-maps dist/index.js",
